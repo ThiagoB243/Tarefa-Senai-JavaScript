@@ -61,6 +61,8 @@ else{
 }}
 
  if(falha === 0){
+   
+   //Escolha do local do evento
 
  localevento = window.prompt("O evento será presencial (P) ou digital (D) ?")
  localevento = localevento.toUpperCase();
@@ -77,7 +79,7 @@ else{
 
  alert("Seu evento de nome " + nomeevento + " será realizado na data "+ diaevento + "/" + mesevento + "/" + anoevento + " por meio " + localeventoanuncio);
  var adicionar = listaevento.unshift(nomeevento);
- }
+ }            // Inscrição de uma pessoa no evento
 }else{
 if(seleçao === 'I'){
  seleçaonome = window.prompt("Qual evento você quer participar? Eventos: " + listaevento)
@@ -87,7 +89,6 @@ if(seleçao === 'I'){
    if (participantesevento[numeropar] < 100){
      alert("Você se inscreveu para o evento "+ seleçaonome);
      participantesevento[numeropar] ++;
-     console.log(participantesevento[1]);
    }else{
      alert("O evento está lotado");
    }
